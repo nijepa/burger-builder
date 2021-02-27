@@ -8,14 +8,15 @@ class BurgerIngredient extends Component  {
     let ingredient = null;
 
     switch ( this.props.type ) {
-      case('breed-bottom'):
+      case('bread-bottom'):
         ingredient = <div className={classes.BreadBottom}></div>;
         break;
       case('bread-top'):
-        ingredient = <div className={classes.BreadTop}>
-          <div className={classes.Seeds1}></div>
-          <div className={classes.Seeds2}></div>
-        </div>;
+        ingredient = 
+          <div className={classes.BreadTop}>
+            <div className={classes.Seeds1}></div>
+            <div className={classes.Seeds2}></div>
+          </div>;
         break;
       case('meat'):
         ingredient = <div className={classes.Meat}></div>;

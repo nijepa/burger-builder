@@ -1,6 +1,7 @@
 .Button {
   background-color: transparent;
-  border: none;
+  border: 2px solid transparent;
+  border-radius: 5px;
   color: white;
   outline: none;
   cursor: pointer;
@@ -10,10 +11,10 @@
   font-weight: bold;
 }
 
-.Button:first-of-type {
+/* .Button:first-of-type {
   margin-left: 0;
   padding-left: 0;
-}
+} */
 
 .Button:disabled {
   color: #ccc;
@@ -24,6 +25,16 @@
   color: #5C9210;
 }
 
+.Success:hover {
+  background-color: #5C9210;
+  color: white;
+}
+
 .Danger {
   color: #944317;
+}
+
+.Danger:hover {
+  background-color: #944317;
+  color: white;
 }
